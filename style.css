@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 3% 40% 20% 15% 15%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+  grid-template-areas: 
+  "tags_div big_div heading_img heading_img heading_img "
+  "tags_div big_div video video projects "
+  "tags_div big_div video video awards "
+  "tags_div big_div clients circle global_design "
+  ;
+
+  padding: 3%;
+  gap: 2%;
+  
+}
+
+.tags_div{
+  /* background-color: aqua; */
+  grid-area: tags_div;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.tags_div>h6{
+  transform: rotate(-90deg);
+  margin-top: 70px;
+  font-weight: 500;
+}
+
+.big_div{
+  /* background-color: aquamarine; */
+  grid-area: big_div;
+  position: relative;
+}
+
+.big_div>img{
+  height: 110%;
+  position: absolute;
+  width: 210%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: none;
+}
+
+.heading_img{
+  /* background-color: blue; */
+  grid-area: heading_img;
+  overflow: hidden;
+  position: relative;
+}
+
+.heading_img>img{
+  height: auto;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: none;
+}
+
+.video{
+  /* background-color: red; */
+  grid-area: video;
+  overflow: hidden;
+  border-radius: 9px;
+  object-fit: cover;
+}
+
+.projects{
+  /* background-color: orangered; */
+  grid-area: projects;
+  position: relative;
+}
+
+.projects>img{
+  height: 240px;
+  position: absolute;
+  width: 137%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: none;
+}
+
+.awards{
+  /* background-color: blueviolet; */
+  grid-area: awards;
+  position: relative;
+}
+
+.awards>img{
+  height: 240px;
+  position: absolute;
+  width: 141%;
+  margin-top: -13%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: none;
+}
+
+
+
+.clients{
+  /* background-color: blanchedalmond; */
+  grid-area: clients;
+  overflow: hidden;
+  position: relative;
+}
+
+.clients>img{
+  height: auto;
+  position: absolute;
+  width: 140%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: none;
+}
+
+.circle{
+  background-color: tomato;
+  grid-area: circle;
+  overflow: hidden;
+
+}
+
+.global_design{
+  background-color: orange;
+  grid-area: global_design;
+  overflow: hidden;
+
+}
