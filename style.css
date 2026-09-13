@@ -112,10 +112,14 @@ section {
 }
 
 .clients {
-  /* background-color: blanchedalmond; */
+  background-color: #505050;
   grid-area: clients;
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .clients > img {
