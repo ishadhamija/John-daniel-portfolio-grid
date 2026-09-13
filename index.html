@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John Daniel Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <section>
+  <body class="overflow-x-hidden">
+    <section class="font-[Inter]">
       <div class="tags_div">
         <h6>Podcasts</h6>
         <h6>Portfolio</h6>
@@ -17,26 +24,41 @@
       </div>
 
       <div class="big_div">
-        <img src="john_daniel_img.png" alt="">
+        <img src="john_daniel_img.png" alt="" />
       </div>
 
       <div class="heading_img">
-        <img src="heading.png" alt="">
+        <img src="heading.png" alt="" />
       </div>
       <div class="video">
-        <video class="rounded-[9px]" autoplay muted loop controls src="task4.mp4"></video>
+        <video
+          class="rounded-[9px]"
+          autoplay
+          muted
+          loop
+          controls
+          src="task4.mp4"
+        ></video>
       </div>
       <div class="projects">
-        <img src="projects.png" alt="">
+        <h2 class="text-5xl font-bold">251</h2>
+        <p class="text-2xl">Projects</p>
       </div>
-      <div class="awards">
-        <img src="awards.png" alt="">
+      <div class="awards text-white">
+        <h2 class="text-5xl font-bold">156</h2>
+        <p class="text-2xl">Awards</p>
       </div>
       <div class="clients">
-        <img src="clients.png" alt="">
+        <img src="clients.png" alt="" />
       </div>
-      <div class="circle "></div>
-      <div class="global_design"></div>
+      <div class="circle bg-black rounded-[20px]">
+        <img src="black_gola.png" alt="">
+      </div>
+      <div class="global_design rounded-[20px]">
+        <h2 class="text-5xl font-bold">172</h2>
+        <p class="text-xl">Global Design</p>
+        <p class="text-xl">Awards</p>
+      </div>
     </section>
   </body>
 </html>
